@@ -1,0 +1,34 @@
+[
+  {"name": "Consumer", "connections": [
+    {"key":"Pharmacy","interaction":"This is how Consumer interacts with Pharmacy"},
+    {"key":"Provider","interaction":"This is how Consumer interacts with Provider"}
+    ]},
+  {"name": "Employer",  "connections": [
+    {"key":"Government","interaction":"This is how Employer interacts with Government"},
+    {"key":"Manufacturer","interaction":"This is how Employer interacts with Manufacturer"}
+    ]},
+  {"name": "PBM",  "connections": [
+    {"key":"Government","interaction":"This is how Employer interacts with Government"},
+    {"key":"Manufacturer","interaction":"This is how Employer interacts with Manufacturer"}
+    ]},
+  {"name": "Provider" ,  "connections": [
+    {"key":"Government","interaction":"This is how Employer interacts with Government"},
+    {"key":"Manufacturer","interaction":"This is how Employer interacts with Manufacturer"}
+    ]},
+  {"name": "Government" ,  "connections": [
+    {"key":"Provider","interaction":"This is how Employer interacts with Government"},
+    {"key":"PBM","interaction":"This is how Employer interacts with Manufacturer"}
+    ]},
+  {"name": "Pharmacy",  "connections": [
+    {"key":"Government","interaction":"This is how Employer interacts with Government"},
+    {"key":"Manufacturer","interaction":"This is how Employer interacts with Manufacturer"}
+    ]},
+  {"name": "Manufacturer",  "connections": [
+    {"key":"Pharmacy","interaction":"This is how Employer interacts with Government"},
+    {"key":"Payer","interaction":"This is how Employer interacts with Manufacturer"}
+    ]},
+  {"name": "Payer",  "connections": [
+    {"key":"Government","interaction":"This is how Employer interacts with Government"},
+    {"key":"Manufacturer","interaction":"This is how Employer interacts with Manufacturer"}
+    ]}
+]
